@@ -1,0 +1,59 @@
+{
+  "schema": "VISUAL_CRITIC_FINDINGS_V1",
+  "checkpoint_ref": "CP-1-FIRST-RENDER",
+  "evidence_screenshot_paths": [
+    "screenshots/final_desktop.png",
+    "screenshots/final_mobile.png",
+    "screenshots/pass2-hero.png",
+    "screenshots/pass2-about.png",
+    "screenshots/pass2-story.png",
+    "screenshots/pass2-media.png",
+    "screenshots/pass2-contact.png"
+  ],
+  "visual_evidence_class": "REAL_SCREENSHOT",
+  "critique_mode": "SCREENSHOT_BACKED_MODEL_FINDING",
+  "findings": [
+    {
+      "finding_id": "VF-01",
+      "severity": "MAJOR",
+      "category": "imagery",
+      "claim": "Pass 1 intro showed the gold logo on a white rectangle against the dark field.",
+      "classification": "MODEL_FINDING_NOT_EVIDENCE",
+      "related_evidence": ["live-browser-intro"]
+    },
+    {
+      "finding_id": "VF-02",
+      "severity": "MAJOR",
+      "category": "layout_grid",
+      "claim": "Pass 1 first viewport omitted the stat lane; copy filled 100svh and pushed stats below the fold.",
+      "classification": "MODEL_FINDING_NOT_EVIDENCE",
+      "related_evidence": ["live-browser-hero"]
+    },
+    {
+      "finding_id": "VF-03",
+      "severity": "MAJOR",
+      "category": "imagery",
+      "claim": "Pass 1 story middle film and some media cells rendered black instead of posters/video.",
+      "classification": "MODEL_FINDING_NOT_EVIDENCE",
+      "related_evidence": ["live-browser-story", "screenshots/pass2-media.png"]
+    },
+    {
+      "finding_id": "VF-04",
+      "severity": "MINOR",
+      "category": "layout_grid",
+      "claim": "Sticky nav overlapped section titles while scrolling.",
+      "classification": "MODEL_FINDING_NOT_EVIDENCE"
+    },
+    {
+      "finding_id": "VF-05",
+      "severity": "NOTE",
+      "category": "responsive",
+      "claim": "Playwright mobile-about capture is 16KB and cannot be trusted as a complete mobile about render.",
+      "classification": "MODEL_FINDING_NOT_EVIDENCE",
+      "related_evidence": ["screenshots/pass2-mobile-about.png"]
+    }
+  ],
+  "disposition": "ACCEPT_CANDIDATE",
+  "authority_clarification": "CRITIC_FINDING_IS_NOT_HUMAN_OR_RELEASE_APPROVAL",
+  "prohibited_evidence_classes": ["MODEL_INFERENCE_AS_EVIDENCE"]
+}

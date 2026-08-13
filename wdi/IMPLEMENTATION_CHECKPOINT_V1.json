@@ -1,0 +1,22 @@
+{
+  "schema": "IMPLEMENTATION_CHECKPOINT_V1",
+  "checkpoint_id": "CP-1-FIRST-RENDER",
+  "checkpoint_kind": "VISUAL_SUBSTANTIAL_UI",
+  "visual_critic_applicable": true,
+  "milestone": "First local Vite render of the full page",
+  "real_browser_render": {
+    "performed": true,
+    "lane": "EXPLORATION_OR_IMPLEMENTATION",
+    "viewport_notes": "Desktop IDE browser on http://localhost:5173 after intro",
+    "screenshot_paths": [
+      "screenshots/pass2-hero.png"
+    ],
+    "reality_class": "LIVE_BROWSER_CAPTURED"
+  },
+  "visual_critic_ref": "wdi/VISUAL_CRITIC_FINDINGS_V1.json",
+  "blocking_findings_open": false,
+  "may_advance": true,
+  "knowledge_trace": [
+    "adapters/pilot/SHARED_EXECUTION_CONTRACT_V1.md"
+  ]
+}

@@ -1014,9 +1014,16 @@ h3,
     grid-template-columns: 1fr;
   }
 
+  .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .stat {
-    border-right: 0;
     border-bottom: 1px solid var(--line);
+  }
+
+  .stat:nth-child(2) {
+    border-right: 0;
   }
 
   .why-item,
@@ -1036,7 +1043,14 @@ h3,
   }
 
   .hero h1 {
-    font-size: clamp(2.7rem, 14vw, 4.4rem);
+    font-size: clamp(2.5rem, 13vw, 3.8rem);
+  }
+
+  .nav-brand span:last-child {
+    max-width: 11rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .footer {

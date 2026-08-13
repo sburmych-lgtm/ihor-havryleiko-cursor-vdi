@@ -1,0 +1,20 @@
+{
+  "schema": "IMPLEMENTATION_CHECKPOINT_V1",
+  "checkpoint_id": "CP-2-AFTER-REMEDIATION",
+  "checkpoint_kind": "VISUAL_SUBSTANTIAL_UI",
+  "visual_critic_applicable": true,
+  "milestone": "Second render after logo/stats/media remediation",
+  "real_browser_render": {
+    "performed": true,
+    "lane": "EXPLORATION_OR_IMPLEMENTATION",
+    "viewport_notes": "Desktop 1440x900 Playwright plus live IDE browser hero after skip; mobile 390x844 Playwright",
+    "screenshot_paths": [
+      "screenshots/final_desktop.png",
+      "screenshots/final_mobile.png"
+    ],
+    "reality_class": "LIVE_BROWSER_CAPTURED"
+  },
+  "visual_critic_ref": "wdi/VISUAL_CRITIC_FINDINGS_V1.json",
+  "blocking_findings_open": false,
+  "may_advance": true
+}

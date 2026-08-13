@@ -1,0 +1,103 @@
+{
+  "schema": "EXECUTION_OBSERVABILITY_V1",
+  "capability_resolution_ref": "wdi/CAPABILITY_RESOLUTION_V1.json",
+  "knowledge_planned": [
+    "adapters/pilot/SHARED_EXECUTION_CONTRACT_V1.md",
+    "adapters/pilot/knowledge/KNOWLEDGE_NAVIGATION_MAP_V1.md",
+    "adapters/pilot/schemas"
+  ],
+  "knowledge_actually_read": [
+    "adapters/pilot/SHARED_EXECUTION_CONTRACT_V1.md",
+    "adapters/pilot/knowledge/KNOWLEDGE_NAVIGATION_MAP_V1.md",
+    "adapters/pilot/schemas/DESIGN_CONTRACT_V1.schema.json",
+    "adapters/pilot/schemas/REFERENCE_DNA_V1.schema.json",
+    "adapters/pilot/schemas/PILOT_PROJECT_INTAKE_V1.schema.json",
+    "adapters/pilot/schemas/CAPABILITY_RESOLUTION_V1.schema.json",
+    "adapters/pilot/schemas/IMPLEMENTATION_CONTRACT_V1.schema.json",
+    "adapters/pilot/schemas/VISUAL_CRITIC_FINDINGS_V1.schema.json",
+    "adapters/pilot/schemas/IMPLEMENTATION_CHECKPOINT_V1.schema.json",
+    "adapters/pilot/schemas/REMEDIATION_RECORD_V1.schema.json",
+    "adapters/pilot/schemas/EXECUTION_OBSERVABILITY_V1.schema.json"
+  ],
+  "knowledge_actually_used": [
+    "adapters/pilot/SHARED_EXECUTION_CONTRACT_V1.md",
+    "adapters/pilot/schemas/DESIGN_CONTRACT_V1.schema.json",
+    "adapters/pilot/schemas/REFERENCE_DNA_V1.schema.json"
+  ],
+  "knowledge_used": [
+    "adapters/pilot/SHARED_EXECUTION_CONTRACT_V1.md",
+    "adapters/pilot/schemas/DESIGN_CONTRACT_V1.schema.json",
+    "adapters/pilot/schemas/REFERENCE_DNA_V1.schema.json"
+  ],
+  "knowledge_observation_status": "OBSERVED",
+  "wdi_packages_planned": [],
+  "wdi_package_routing": "DELEGATED_TO_PHASE_10B_ROUTER",
+  "wdi_packages_actually_invoked": [],
+  "wdi_packages_invoked": [],
+  "external_capabilities_considered": [
+    "frontend-design",
+    "ui-ux-pro-max",
+    "modern-web-guidance",
+    "motion",
+    "cursor-ide-browser",
+    "plugin-railway-railway",
+    "plugin-motion-Motion"
+  ],
+  "external_capabilities_selected": [
+    "frontend-design",
+    "ui-ux-pro-max",
+    "modern-web-guidance",
+    "motion",
+    "cursor-ide-browser",
+    "plugin-motion-Motion"
+  ],
+  "external_capabilities_actually_invoked": [
+    "frontend-design",
+    "ui-ux-pro-max",
+    "modern-web-guidance",
+    "motion",
+    "cursor-ide-browser",
+    "plugin-motion-Motion"
+  ],
+  "external_capabilities_skipped": [
+    "plugin-railway-railway",
+    "shadcn",
+    "context7"
+  ],
+  "external_selected": [
+    "frontend-design",
+    "ui-ux-pro-max",
+    "modern-web-guidance",
+    "motion",
+    "cursor-ide-browser",
+    "plugin-motion-Motion"
+  ],
+  "external_skipped": [
+    "plugin-railway-railway",
+    "shadcn",
+    "context7"
+  ],
+  "evidence_actually_captured": [
+    "screenshots/final_desktop.png",
+    "screenshots/final_mobile.png",
+    "screenshots/pass2-hero.png"
+  ],
+  "evidence_refs": [
+    "screenshots/final_desktop.png",
+    "screenshots/final_mobile.png"
+  ],
+  "findings_produced": ["VF-01", "VF-02", "VF-03", "VF-04", "VF-05"],
+  "open_findings": ["VF-05"],
+  "authority_notes": [
+    "Critic findings are not human or release approval.",
+    "MODEL_INFERENCE_AS_EVIDENCE is prohibited.",
+    "Railway unauthenticated. Git remote absent.",
+    "WDI core was not modified."
+  ],
+  "deferred_items": [
+    "Authorized client transformations",
+    "Live contact channels",
+    "Railway deploy",
+    "Git push"
+  ]
+}

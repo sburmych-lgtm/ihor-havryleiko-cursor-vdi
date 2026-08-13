@@ -1,0 +1,29 @@
+{
+  "schema": "REMEDIATION_RECORD_V1",
+  "critic_ref": "wdi/VISUAL_CRITIC_FINDINGS_V1.json",
+  "iteration": 2,
+  "max_iterations": 3,
+  "finding_ids": ["VF-01", "VF-02", "VF-03", "VF-04"],
+  "original_evidence_refs": ["live-browser-intro", "live-browser-hero", "live-browser-story"],
+  "required_change": "Remove logo plate, pin stats to screen one, restore media posters, clear nav overlap.",
+  "implementation_change": "Transparent gold PNG; hero flex + stats bar; AutoVideo poster background; champion still for story beat 2; scroll-padding-top.",
+  "actions": [
+    "Knocked white from logo-gold.jpg to logo-gold.png",
+    "Changed .hero to column flex so .stats stay in the first 100svh",
+    "AutoVideo: CSS poster background, fade-in on playing, pause offscreen",
+    "Story beat 2 uses Champion.jpg",
+    "html scroll-padding-top 5.75rem",
+    "Reveal no longer starts at opacity 0"
+  ],
+  "re_render_evidence_refs": [
+    "screenshots/final_desktop.png",
+    "screenshots/pass2-hero.png"
+  ],
+  "verification_status": "VERIFIED_CLEARED",
+  "resolved": true,
+  "escalated_at_ceiling": false,
+  "design_contract_item_refs": ["imagery_rules", "hero", "motion"],
+  "outcome": "CLEARED",
+  "notes": "VF-05 remains a note on capture completeness, not a blocking visual defect of the page itself. Live desktop hero after pass 2 showed stats + canoe + CTAs together.",
+  "model_finding_classification": "MODEL_FINDING_NOT_EVIDENCE"
+}
