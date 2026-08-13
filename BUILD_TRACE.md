@@ -40,7 +40,7 @@ Shipped a Vite/React single page from the dataset + selected real media.
 
 ## Pass 4 — Poseidon intro
 
-Replaced the SVG paddle-strike intro with a 1080p film interpolated from the five client keyframes in `Assets/Animation_1`. Method: ffmpeg `minterpolate` (optical flow) between stills, then slow-mo + freeze on the last frame (`public/media/video/poseidon-intro.mp4`, ~6.3s). On end (or skip), a cyan flash + blur-scale wipe reveals the existing ocean hero. `prefers-reduced-motion` skips the film.
+Replaced the SVG paddle-strike intro with a real-time WebGL cinematic (Three.js / React Three Fiber): Gerstner ocean, 3D Poseidon, golden trident strike, physically flying stone IG shards, lightning and bloom, then a camera push into the live ocean hero. `prefers-reduced-motion` skips the film.
 
 **Still limited:**
 

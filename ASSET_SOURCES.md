@@ -44,6 +44,6 @@ Licensing is **UNKNOWN** (client-supplied). Do not invent licenses.
 | Intro paddle silhouette | Retired — replaced by Poseidon frame film |
 | Favicon IG square | Host SVG |
 | `logo-gold.png` | Derived from real logo (background removal only); no longer the intro |
-| Poseidon intro film | Host-generated from client keyframes (not a real-time 3D engine) |
+| Poseidon intro | Real-time Three.js cinematic (not frame interpolation). Client stills in `Assets/Animation_1` used as art direction only. |
 
 No stock gym cliché pack was added. Unused selected stills remain in `public/media/photos` for later art direction.
