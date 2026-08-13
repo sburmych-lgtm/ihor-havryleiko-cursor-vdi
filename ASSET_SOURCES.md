@@ -11,9 +11,6 @@ Licensing is **UNKNOWN** (client-supplied). Do not invent licenses.
 | Prototype path | Source | Role |
 |---|---|---|
 | `public/media/photos/logo-ink.jpg` | `Assets/Photo/Logo.jpg` | Brand mark (file) |
-| `public/media/video/poseidon-intro.mp4` | Generated from `Assets/Animation_1` (`1.png`–`5.png`) via ffmpeg optical-flow interpolation + slow-mo | Fullscreen Poseidon intro: trident strike shatters the IG logo, then wipes into the live hero |
-| `public/media/intro/poster-start.jpg` | First interpolated frame still | Intro poster |
-| `public/media/intro/poster-end.jpg` | Last interpolated frame still | Aftermath still (portals in the splash) |
 | `public/media/photos/champion.jpg` | `Assets/Photo/Champion.jpg` | Proof + story beat 2 |
 | `public/media/photos/certificates.jpg` | `Assets/Photo/Certificates.jpg` | Credentials still |
 | `public/media/photos/fullbody-gym.jpg` | SelfPhoto `photo_22` | About |
@@ -41,9 +38,7 @@ Licensing is **UNKNOWN** (client-supplied). Do not invent licenses.
 | Hero images of fake clients | **Not generated** |
 | Before/after transformations | **Not generated** (missing authorized photos) |
 | Fake testimonials | **Not written** |
-| Intro paddle silhouette | Retired — replaced by Poseidon frame film |
 | Favicon IG square | Host SVG |
-| `logo-gold.png` | Derived from real logo (background removal only); no longer the intro |
-| Poseidon intro film | Host-generated from client keyframes (not a real-time 3D engine) |
+| `logo-gold.png` | Derived from real logo (background removal only); unused after intro removal |
 
 No stock gym cliché pack was added. Unused selected stills remain in `public/media/photos` for later art direction.

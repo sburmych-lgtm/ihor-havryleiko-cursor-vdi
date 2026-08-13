@@ -42,7 +42,7 @@ Local copy remains at this folder. Run `npm run dev` for http://localhost:5173/.
 
 **PROTOTYPE_READY_FOR_HUMAN_REVIEW** (not a release, not a WCAG claim, not a WDI gate closure).
 
-The site is a complete Ukrainian single-page prototype: Poseidon cinematic intro into a canoe hero, about, method, three-stroke story, services, pricing board, media, proof, consultation mock.
+The site is a complete Ukrainian single-page prototype: canoe hero, about, method, three-stroke story, services, pricing board, media, proof, consultation mock.
 
 ## Known limitations
 

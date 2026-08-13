@@ -38,16 +38,15 @@ Shipped a Vite/React single page from the dataset + selected real media.
 - `pass2-mobile-about.png` from the capture script is abnormally small (likely a dark/empty frame after scroll); treat mobile-about capture as incomplete evidence, not a pass.
 - Mixed UAH/$ from source data.
 
-## Pass 4 — Poseidon intro
+## Pass 5 — intro removed
 
-Replaced the SVG paddle-strike intro with a 1080p film interpolated from the five client keyframes in `Assets/Animation_1`. Method: ffmpeg `minterpolate` (optical flow) between stills, then slow-mo + freeze on the last frame (`public/media/video/poseidon-intro.mp4`, ~6.3s). On end (or skip), a cyan flash + blur-scale wipe reveals the existing ocean hero. `prefers-reduced-motion` skips the film.
+Fullscreen Poseidon intro (video and 3D) is gone. The site opens on the canoe hero.
 
 **Still limited:**
 
 - No authorized transformations or real testimonials.
 - Form is a mock.
 - Mixed UAH/$ from source data.
-- Poseidon sequence is cinematic interpolation of stills, not a real-time 3D render.
 - Railway stayed unauthorized; live host is Vercel Hobby (`https://ihor-havryleiko-trainer.vercel.app`).
 
 ## What remains out of scope

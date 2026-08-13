@@ -1,15 +1,11 @@
 import { useState } from "react"
 import { brand, nav } from "../content"
 
-type Props = {
-  visible: boolean
-}
-
-export function SiteNav({ visible }: Props) {
+export function SiteNav() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className={`nav ${visible ? "is-on" : ""} ${open ? "is-open" : ""}`}>
+    <header className={`nav is-on ${open ? "is-open" : ""}`}>
       <a className="nav-brand" href="#top">
         <span className="nav-mark">IG</span>
         {brand.latin}

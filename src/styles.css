@@ -18,11 +18,9 @@
   --display: "Unbounded", system-ui, sans-serif;
   --body: "Manrope", system-ui, sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
-  --intro-spring: 1050ms linear(0, 0.0162, 0.0579, 0.1167, 0.1858, 0.2602, 0.3361, 0.4108, 0.4823, 0.5493, 0.6111, 0.6672, 0.7176, 0.7623, 0.8015, 0.8357, 0.8652, 0.8904, 0.9119, 0.9299, 0.9449, 0.9574, 0.9676, 0.9759, 0.9826, 0.9879, 0.9921, 0.9953, 0.9977, 0.9996, 1.0009, 1.0018, 1.0024, 1, 1);
   --pad: clamp(1.25rem, 4vw, 3.5rem);
   --max: 1180px;
   --z-nav: 40;
-  --z-intro: 50;
 }
 
 *,
@@ -274,93 +272,6 @@ h3,
   width: 44px;
   height: 44px;
   border-radius: 999px;
-}
-
-/* INTRO — Poseidon cinematic */
-.intro {
-  position: fixed;
-  inset: 0;
-  z-index: var(--z-intro);
-  background: #03090d;
-  overflow: hidden;
-}
-
-.intro-film {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.intro-vignette {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background:
-    linear-gradient(180deg, rgba(3, 9, 13, 0.18) 0%, transparent 22%, transparent 72%, rgba(3, 9, 13, 0.55) 100%),
-    radial-gradient(ellipse at 50% 50%, transparent 48%, rgba(3, 9, 13, 0.45) 100%);
-}
-
-.intro-flash {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0;
-  background: radial-gradient(circle at 36% 48%, rgba(232, 247, 243, 0.72), rgba(42, 212, 232, 0.28) 38%, transparent 68%);
-}
-
-.intro.is-flash .intro-flash {
-  animation: introFlash 0.7s var(--ease) forwards;
-}
-
-@keyframes introFlash {
-  0% { opacity: 0; }
-  35% { opacity: 1; }
-  100% { opacity: 0; }
-}
-
-.intro-skip {
-  position: absolute;
-  right: 1.25rem;
-  bottom: 1.25rem;
-  z-index: 5;
-  background: transparent;
-  border: 1px solid var(--line);
-  color: var(--mist);
-  min-height: 44px;
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-}
-
-.intro-caption {
-  position: absolute;
-  bottom: 18%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 0.72rem;
-  letter-spacing: 0.42em;
-  text-transform: uppercase;
-  color: var(--aqua);
-  z-index: 2;
-}
-
-@keyframes drift {
-  from { transform: translate3d(-2%, -1%, 0) rotate(0deg); }
-  to { transform: translate3d(2%, 1%, 0) rotate(8deg); }
-}
-
-@keyframes slash {
-  to { transform: rotate(-19deg) scaleX(1); }
-}
-
-@keyframes ring {
-  60% { opacity: 1; }
-  100% { opacity: 0; transform: translate(-50%, -50%) scale(18); }
 }
 
 /* HERO */
