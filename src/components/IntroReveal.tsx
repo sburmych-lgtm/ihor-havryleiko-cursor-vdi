@@ -1,7 +1,5 @@
-import { Canvas } from "@react-three/fiber"
 import { AnimatePresence, motion, useReducedMotion } from "motion/react"
-import { useCallback, useEffect, useState } from "react"
-import { PoseidonScene } from "../intro/PoseidonScene"
+import { useCallback, useEffect, useRef, useState } from "react"
 
 type Props = {
   onDone: () => void
@@ -9,6 +7,7 @@ type Props = {
 
 export function IntroReveal({ onDone }: Props) {
   const reduce = useReducedMotion()
+  const videoRef = useRef<HTMLVideoElement>(null)
   const [visible, setVisible] = useState(!reduce)
   const [flash, setFlash] = useState(false)
 
@@ -23,6 +22,19 @@ export function IntroReveal({ onDone }: Props) {
     }
   }, [onDone, reduce])
 
+  useEffect(() => {
+    const node = videoRef.current
+    if (!node) return
+
+    const kick = () => {
+      void node.play().catch(() => undefined)
+    }
+
+    node.addEventListener("canplay", kick)
+    kick()
+    return () => node.removeEventListener("canplay", kick)
+  }, [])
+
   if (reduce) {
     return null
   }
@@ -36,21 +48,21 @@ export function IntroReveal({ onDone }: Props) {
           initial={{ opacity: 1 }}
           exit={{
             opacity: 0,
-            scale: 1.08,
+            scale: 1.07,
             filter: "blur(18px)",
           }}
           transition={{ duration: 0.95, ease: [0.76, 0, 0.24, 1] }}
         >
-          <Canvas
+          <video
+            ref={videoRef}
             className="intro-film"
-            style={{ position: "absolute", inset: 0 }}
-            dpr={[1, 1.6]}
-            shadows="soft"
-            camera={{ position: [0.62, 1.62, 7.35], fov: 36.5, near: 0.1, far: 80 }}
-            gl={{ antialias: true, powerPreference: "high-performance", alpha: false }}
-          >
-            <PoseidonScene onComplete={close} />
-          </Canvas>
+            src="/media/video/poseidon-intro.mp4"
+            poster="/media/intro/poster-start.jpg"
+            muted
+            playsInline
+            preload="auto"
+            onEnded={close}
+          />
           <div className="intro-vignette" />
           <div className="intro-flash" />
           <button type="button" className="intro-skip" onClick={close}>
