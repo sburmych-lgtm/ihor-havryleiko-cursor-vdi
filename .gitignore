@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+public/media/intro/*.png
+public/media/intro/concat.txt
 
 # Editor directories and files
 .vscode/*

@@ -1,13 +1,18 @@
 import { hero, stats } from "../content"
 import { AutoVideo } from "./AutoVideo"
 
-export function Hero() {
+type Props = {
+  revealed: boolean
+}
+
+export function Hero({ revealed }: Props) {
   return (
     <section className="hero" id="top">
       <div className="hero-media">
         <AutoVideo
           src="/media/video/ocean.mp4"
           poster="/media/posters/ocean.jpg"
+          active={revealed}
         />
         <div className="hero-shade" />
       </div>

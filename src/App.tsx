@@ -25,7 +25,7 @@ export default function App() {
       <IntroReveal onDone={finishIntro} />
       <SiteNav visible={introDone} />
       <main>
-        <Hero />
+        <Hero revealed={introDone} />
         <WakeLine />
         <About />
         <WakeLine />

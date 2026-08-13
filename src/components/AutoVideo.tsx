@@ -4,15 +4,21 @@ type Props = {
   src: string
   poster?: string
   className?: string
+  active?: boolean
 }
 
-export function AutoVideo({ src, poster, className }: Props) {
+export function AutoVideo({ src, poster, className, active = true }: Props) {
   const ref = useRef<HTMLVideoElement>(null)
   const [playing, setPlaying] = useState(false)
 
   useEffect(() => {
     const node = ref.current
     if (!node) return
+    if (!active) {
+      node.pause()
+      setPlaying(false)
+      return
+    }
 
     const io = new IntersectionObserver(
       (entries) => {
@@ -30,7 +36,7 @@ export function AutoVideo({ src, poster, className }: Props) {
 
     io.observe(node)
     return () => io.disconnect()
-  }, [])
+  }, [active])
 
   return (
     <div
