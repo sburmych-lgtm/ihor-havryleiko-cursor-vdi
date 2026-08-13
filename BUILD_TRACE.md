@@ -48,6 +48,7 @@ Replaced the SVG paddle-strike intro with a 1080p film interpolated from the fiv
 - Form is a mock.
 - Mixed UAH/$ from source data.
 - Poseidon sequence is cinematic interpolation of stills, not a real-time 3D render.
+- Railway stayed unauthorized; live host is Vercel Hobby (`https://ihor-havryleiko-trainer.vercel.app`).
 
 ## What remains out of scope
 

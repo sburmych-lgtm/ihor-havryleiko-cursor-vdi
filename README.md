@@ -26,13 +26,17 @@ npm run preview
 
 Git was initialized **inside this folder** because the trainer project had no dedicated repository. Parent folders were not used.
 
-## Pushed
+## GitHub
 
-**No.** `PUSH_BLOCKED_NO_REMOTE` — no git remote is configured on this repository.
+https://github.com/sburmych-lgtm/ihor-havryleiko-cursor-vdi
 
-## Railway deployed
+## Live site (Vercel)
 
-**No.** `RAILWAY_BLOCKED_NO_AUTH` — Railway MCP `whoami` returned unauthenticated.
+Railway CLI/MCP stayed unauthorized, so the prototype is hosted on Vercel Hobby instead:
+
+**https://ihor-havryleiko-trainer.vercel.app**
+
+Local copy remains at this folder. Run `npm run dev` for http://localhost:5173/.
 
 ## Final verdict
 
