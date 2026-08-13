@@ -21,6 +21,8 @@
   --pad: clamp(1.25rem, 4vw, 3.5rem);
   --max: 1180px;
   --z-nav: 40;
+  --z-intro: 50;
+  --intro-exit: 1650ms linear(0, 0.0115, 0.0415, 0.0842, 0.1352, 0.1912, 0.2495, 0.3083, 0.366, 0.4219, 0.475, 0.5251, 0.5719, 0.6152, 0.655, 0.6915, 0.7248, 0.7549, 0.7822, 0.8067, 0.8288, 0.8485, 0.8662, 0.8819, 0.8959, 0.9084, 0.9194, 0.9292, 0.9379, 0.9455, 0.9523, 0.9582, 0.9634, 0.968, 0.972, 0.9756, 0.9787, 0.9814, 0.9838, 0.9859, 0.9877, 0.9893, 0.9907, 0.9919, 0.993, 0.9939, 0.9947, 0.9954, 0.996, 0.9965, 0.997, 0.9974, 0.9977, 1, 1);
 }
 
 *,
@@ -155,6 +157,7 @@ h3,
   border-radius: 999px;
   font-weight: 700;
   letter-spacing: 0.02em;
+  cursor: pointer;
   transition: transform 180ms var(--ease), background 180ms, color 180ms, box-shadow 180ms;
 }
 
@@ -272,6 +275,60 @@ h3,
   width: 44px;
   height: 44px;
   border-radius: 999px;
+  cursor: pointer;
+}
+
+/* TITLE INTRO */
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-intro);
+  background: #03090d;
+  overflow: hidden;
+}
+
+.intro-film,
+.intro canvas {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+.intro-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(3, 9, 13, 0.2) 0%, transparent 24%, transparent 70%, rgba(3, 9, 13, 0.5) 100%),
+    radial-gradient(ellipse at 50% 50%, transparent 46%, rgba(3, 9, 13, 0.42) 100%);
+}
+
+.intro-skip {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 5;
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--mist);
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.intro-skip:hover,
+.intro-skip:focus-visible {
+  color: var(--foam);
+  border-color: var(--azure);
+  outline: 2px solid var(--azure);
+  outline-offset: 3px;
 }
 
 /* HERO */
