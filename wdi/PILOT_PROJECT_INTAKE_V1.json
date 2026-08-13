@@ -1,0 +1,153 @@
+{
+  "schema": "PILOT_PROJECT_INTAKE_V1",
+  "classification": ["PILOT_ONLY", "NON_RELEASE", "NON_EVIDENCE_AUTHORITY"],
+  "project_id": "ihor-havryleiko-fitnesstrainer-cursor-vdi",
+  "business": {
+    "status": "PROVIDED",
+    "summary": "Personal trainer Ihor Havryleiko, Lviv, fitness center Plyazh at the aquapark.",
+    "sector": "personal-training",
+    "offerings": [
+      "personal training",
+      "group training",
+      "online coaching",
+      "paddling coaching",
+      "rehab-informed training"
+    ]
+  },
+  "goals": {
+    "status": "PROVIDED",
+    "primary_goals": [
+      "Premium personal-brand website prototype",
+      "Qualify WDI-assisted visual frontend on a real client"
+    ],
+    "success_signals": [
+      "Visually credible desktop and mobile prototype",
+      "Real media used",
+      "Reference logic adapted, not copied"
+    ]
+  },
+  "audience": {
+    "status": "PROVIDED",
+    "summary": "Beginners through strength, rehab, posture, stretching, boxing; not medically contraindicated gym clients.",
+    "segments": ["beginners", "fat-loss", "hypertrophy", "rehab", "paddling"]
+  },
+  "brand": {
+    "status": "PROVIDED",
+    "name": "Igor Gavrileyko / Ігор Гаврилейко",
+    "voice": "Disciplined, specific, champion-coach, Ukrainian.",
+    "visual_direction": "Premium athletic water-inspired azure/aqua/navy. No red-black gym cliche. No orange interstitial.",
+    "constraints": [
+      "Do not copy fit-and-you.webflow.io",
+      "Do not reproduce orange screen transition",
+      "No lorem ipsum",
+      "Do not modify WDI core"
+    ]
+  },
+  "user_preferences": {
+    "status": "PROVIDED",
+    "items": [
+      "Logo reveal plus water-force / mythic strike intro",
+      "Blue aqua family",
+      "Canoe identity plus trainer identity"
+    ]
+  },
+  "content": {
+    "status": "PROVIDED",
+    "supplied_copy": true,
+    "pages_or_sections": [
+      "hero",
+      "about",
+      "why",
+      "story",
+      "services",
+      "formats",
+      "media",
+      "proof",
+      "contact"
+    ],
+    "notes": "Dataset in Ukrainian; site copy transformed from dataset, not invented biography."
+  },
+  "media": {
+    "photos": {
+      "status": "PROVIDED",
+      "summary": "Studio/gym self photos, champion poster, certificates, two logo versions."
+    },
+    "video": {
+      "status": "PROVIDED",
+      "summary": "Ocean kayak, forest run, dragonboat, client coaching, gym self-training. MOV converted locally to MP4."
+    }
+  },
+  "available_assets": [
+    {
+      "asset_ref": "Assets/ihor_havryleiko_dataset.md",
+      "role": "factual source",
+      "availability": "AVAILABLE"
+    },
+    {
+      "asset_ref": "Assets/Referance_website.txt",
+      "role": "primary visual reference URL",
+      "availability": "AVAILABLE"
+    },
+    {
+      "asset_ref": "client-authorized-before-after",
+      "role": "transformation gallery",
+      "availability": "MISSING",
+      "notes": "Not fabricated as real client results."
+    },
+    {
+      "asset_ref": "phone-email",
+      "role": "direct contact",
+      "availability": "MISSING"
+    }
+  ],
+  "functional_requirements": {
+    "status": "PROVIDED",
+    "items": ["responsive single-page prototype", "consultation form mock"]
+  },
+  "frontend_requirements": {
+    "status": "PROVIDED",
+    "responsive_required": true,
+    "preferred_stack": null,
+    "notes": "Host chose Vite + React + Motion. Not a WDI framework lock."
+  },
+  "backend_api": {
+    "applicability": "NOT_APPLICABLE",
+    "status": "NOT_APPLICABLE",
+    "notes": "Prototype form is client-side only."
+  },
+  "forms_integrations": {
+    "status": "PARTIAL",
+    "forms": ["consultation mock"],
+    "integrations": []
+  },
+  "legal_privacy": {
+    "status": "NOT_PROVIDED",
+    "notes": "Record only; not a legal determination."
+  },
+  "reference_websites": [
+    {
+      "ref_id": "REF-FITANDYOU",
+      "uri_or_path": "https://fit-and-you.webflow.io/",
+      "role": "PRIMARY_VISUAL",
+      "notes": "Ambition and rhythm benchmark. Orange interstitial forbidden."
+    }
+  ],
+  "explicit_non_goals": [
+    "Production release",
+    "WCAG conformance claim",
+    "Backend CRM",
+    "Copying the reference club site",
+    "WDI core modification"
+  ],
+  "input_status": {
+    "dataset": { "status": "PROVIDED" },
+    "reference": { "status": "PROVIDED" },
+    "media": { "status": "PROVIDED" },
+    "contact_channels": { "status": "NOT_PROVIDED", "blocking_if_missing": false }
+  },
+  "blocking_inputs": [],
+  "sufficiency": {
+    "disposition": "PARTIAL_WITH_EXPLICIT_GAPS",
+    "notes": "Enough to prototype. Gaps: no client before/after, no phone/email, no real testimonials."
+  }
+}

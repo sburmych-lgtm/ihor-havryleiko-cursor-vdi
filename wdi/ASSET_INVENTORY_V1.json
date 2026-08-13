@@ -1,0 +1,66 @@
+{
+  "schema": "ASSET_INVENTORY_V1",
+  "classification": ["PILOT_ONLY", "NON_RELEASE", "NON_EVIDENCE_AUTHORITY"],
+  "project_id": "ihor-havryleiko-fitnesstrainer-cursor-vdi",
+  "assets": [
+    {
+      "asset_id": "ocean-video",
+      "role": "hero",
+      "source": "Assets/Video/Canoe_Ocean.mp4",
+      "licensing": { "status": "UNKNOWN", "do_not_invent": true },
+      "availability": "AVAILABLE",
+      "desktop_use": "REQUIRED",
+      "mobile_use": "REQUIRED",
+      "format": "mp4"
+    },
+    {
+      "asset_id": "logo-gold",
+      "role": "intro mark",
+      "source": "Assets/Photo/Logo_gold_version.jpg",
+      "licensing": { "status": "UNKNOWN", "do_not_invent": true },
+      "availability": "AVAILABLE",
+      "desktop_use": "REQUIRED",
+      "mobile_use": "REQUIRED",
+      "format": "jpg"
+    },
+    {
+      "asset_id": "fullbody-gym",
+      "role": "about portrait",
+      "source": "Assets/Photo/SelfPhoto/photo_22",
+      "licensing": { "status": "UNKNOWN", "do_not_invent": true },
+      "availability": "AVAILABLE",
+      "desktop_use": "REQUIRED",
+      "mobile_use": "REQUIRED",
+      "format": "jpg"
+    },
+    {
+      "asset_id": "champion-poster",
+      "role": "proof",
+      "source": "Assets/Photo/Champion.jpg",
+      "licensing": { "status": "UNKNOWN", "do_not_invent": true },
+      "availability": "AVAILABLE",
+      "desktop_use": "REQUIRED",
+      "mobile_use": "OPTIONAL",
+      "format": "jpg"
+    }
+  ],
+  "missing_assets": [
+    {
+      "asset_id": "authorized-before-after",
+      "role": "transformation gallery",
+      "impact": "DEGRADES_QUALITY",
+      "notes": "Omitted rather than synthesized as real clients."
+    },
+    {
+      "asset_id": "direct-phone-email",
+      "role": "contact",
+      "impact": "OPTIONAL"
+    }
+  ],
+  "unresolved": [
+    {
+      "item": "logo raster on dark",
+      "reason": "Source logos are photographs on light grounds; blend mode is a prototype workaround."
+    }
+  ]
+}

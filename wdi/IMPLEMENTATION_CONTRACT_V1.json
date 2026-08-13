@@ -1,0 +1,46 @@
+{
+  "schema": "IMPLEMENTATION_CONTRACT_V1",
+  "classification": ["PILOT_ONLY", "NON_RELEASE", "NON_AUTHORITY", "NON_EVIDENCE_AUTHORITY"],
+  "project_id": "ihor-havryleiko-fitnesstrainer-cursor-vdi",
+  "frontend": {
+    "applicability": "REQUIRED",
+    "summary": "Vite React TypeScript SPA with Motion intro and custom CSS.",
+    "stack_preference": "Vite + React + motion/react (host choice, not a WDI lock)",
+    "responsive": true,
+    "notes": "Single page. Ukrainian UI."
+  },
+  "backend_api": {
+    "applicability": "NOT_APPLICABLE",
+    "summary": "No API. Form is a local success state."
+  },
+  "forms": {
+    "applicability": "OPTIONAL",
+    "items": ["consultation mock"]
+  },
+  "storage": { "applicability": "NOT_APPLICABLE" },
+  "integrations": { "applicability": "NOT_APPLICABLE" },
+  "auth": { "applicability": "NOT_APPLICABLE" },
+  "analytics": { "applicability": "NOT_APPLICABLE" },
+  "seo": {
+    "applicability": "OPTIONAL",
+    "summary": "Title and description only. No structured-data claim.",
+    "structured_data_required": false
+  },
+  "security": {
+    "applicability": "OPTIONAL",
+    "summary": "Static prototype. No secrets in repo.",
+    "concerns": []
+  },
+  "deployment_assumptions": {
+    "status": "DECLARED",
+    "summary": "Local Vite. Railway attempted; auth missing. provider_lock remains false.",
+    "provider_lock": false
+  },
+  "excluded_features": [
+    "CRM",
+    "payment",
+    "real email send",
+    "WCAG certification",
+    "production hosting lock"
+  ]
+}

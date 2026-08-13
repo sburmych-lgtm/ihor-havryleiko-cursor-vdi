@@ -1,0 +1,55 @@
+{
+  "schema": "DESIGN_CONTRACT_V1",
+  "reference_dna_ref": "wdi/REFERENCE_DNA_V1.json",
+  "brand_signal": "Champion paddler who coaches: water force, athletic discipline, Lviv aquapark gym. Ukrainian voice. Signature is a paddle-strike through the IG mark into ocean video — not a club slogan.",
+  "composition": "Editorial current: full-bleed video hero, overlapping display type on a waterline, horizontal stat lane, manifesto rows, three vertical story films, results-board pricing. Not a SaaS card grid.",
+  "typography": "Unbounded for display (Cyrillic, athletic, not Bebas/Barlow default). Manrope for body. One accent word in azure.",
+  "color": "Abyss #03090d, navy #07141c, azure #2ad4e8, aqua #7ef0d4, foam #e8f7f3, mist #9ec9c4, gold #c9a45c only on the intro mark. No orange. No red-black gym cliche.",
+  "motion_intent": "One orchestrated intro (logo spring, paddle slash, clip-path split). Scroll reveals via transform/opacity. Videos pause offscreen. prefers-reduced-motion skips intro.",
+  "do_not": [
+    "Copy the reference site",
+    "Use an orange interstitial",
+    "Invent fake client testimonials or before/after bodies",
+    "Generic 01/02/03 gym cards unless the content is a real sequence",
+    "Lorem ipsum",
+    "Declare WCAG or release approval"
+  ],
+  "visual_direction": {
+    "applicability": "APPLICABLE",
+    "summary": "Dark water athletic editorial.",
+    "rules": ["Azure as the only loud accent", "Gold reserved for intro logo"]
+  },
+  "layout_system": {
+    "applicability": "APPLICABLE",
+    "summary": "Max ~1180px wrap, full-bleed media exceptions, 4-col stats collapsing to 1."
+  },
+  "imagery_rules": {
+    "applicability": "APPLICABLE",
+    "summary": "Prefer real trainer media. Hero must be ocean kayak. Coaching clip proves live training.",
+    "rules": ["No stock gym cliche as primary", "Do not fabricate client transformations"]
+  },
+  "responsive": {
+    "applicability": "APPLICABLE",
+    "summary": "Desktop cinematic columns collapse to stacked films and a hamburger nav."
+  },
+  "motion": {
+    "applicability": "APPLICABLE",
+    "summary": "Intro is the signature. Elsewhere restraint."
+  },
+  "cta_hierarchy": {
+    "applicability": "APPLICABLE",
+    "summary": "Primary: free consultation. Secondary: method. Pricing rows point to the same form."
+  },
+  "a11y_ux": {
+    "applicability": "APPLICABLE",
+    "summary": "Skip link, focus rings, 44px targets, reduced motion. Not a conformance claim."
+  },
+  "reference_fidelity": {
+    "applicability": "APPLICABLE",
+    "summary": "Preserve ambition, refuse clone."
+  },
+  "knowledge_trace": [
+    "adapters/pilot/SHARED_EXECUTION_CONTRACT_V1.md",
+    "wdi/REFERENCE_DNA_V1.json"
+  ]
+}

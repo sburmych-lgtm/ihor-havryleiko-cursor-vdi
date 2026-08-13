@@ -1,0 +1,64 @@
+{
+  "schema": "REFERENCE_DNA_V1",
+  "source_refs": [
+    {
+      "ref_id": "REF-FITANDYOU",
+      "uri_or_path": "https://fit-and-you.webflow.io/",
+      "notes": "Live inspection via cursor-ide-browser. Club site, not a personal trainer."
+    }
+  ],
+  "classes": {
+    "preserve": [
+      "Cinematic full-bleed media occupying a large share of first screen",
+      "Oversized condensed display type as the hero thesis",
+      "High section ambition and confident CTA presence",
+      "Dark premium atmosphere with sparse chrome",
+      "Media bands that feel like film, not blog cards"
+    ],
+    "adapt": [
+      "Orange accent system becomes azure/aqua/navy water identity",
+      "Club membership language becomes personal coaching formats",
+      "English lifestyle slogan becomes Ukrainian champion-coach voice",
+      "Class catalog becomes this athlete's actual services",
+      "Opening orange interstitial becomes a logo + paddle-strike reveal"
+    ],
+    "do_not_copy": [
+      "Orange full-screen interstitial / orange-screen transition",
+      "FIT & YOU wordmark and orange ampersand",
+      "IT'S NOT FITNESS. IT'S LIFE. headline",
+      "JOIN NOW [+] orange circle CTA as a clone",
+      "Membership card/image trio layout",
+      "4 clubs / 45 min / 20 activities stat set",
+      "Webflow structure, class grid, and copy"
+    ]
+  },
+  "design_dimensions": {
+    "hero_proportions": {
+      "applicability": "APPLICABLE",
+      "preserve": ["Near full-viewport opening with type over media"],
+      "adapt": ["Video is canoe ocean, not dark gym club interior"],
+      "do_not_copy": ["Orange second line as brand signature"]
+    },
+    "motion_language": {
+      "applicability": "APPLICABLE",
+      "preserve": ["High-energy opening, then calmer section rhythm"],
+      "adapt": ["Water-force strike and clip-path split instead of orange flash"],
+      "do_not_copy": ["Orange interstitial"]
+    },
+    "color_relationships": {
+      "applicability": "APPLICABLE",
+      "preserve": ["High contrast dark field with one accent family"],
+      "adapt": ["Accent is azure/aqua, gold only as champion metal"],
+      "do_not_copy": ["Black-orange club palette"]
+    },
+    "visual_personality": {
+      "applicability": "APPLICABLE",
+      "preserve": ["Elite, disciplined, complete"],
+      "adapt": ["Individual champion, water, Lviv aquapark gym"],
+      "do_not_copy": ["Boutique club brand personality"]
+    }
+  },
+  "knowledge_trace": [
+    "adapters/pilot/SHARED_EXECUTION_CONTRACT_V1.md"
+  ]
+}

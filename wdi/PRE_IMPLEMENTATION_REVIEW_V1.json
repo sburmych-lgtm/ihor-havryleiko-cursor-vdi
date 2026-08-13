@@ -1,0 +1,32 @@
+{
+  "schema": "PRE_IMPLEMENTATION_REVIEW_V1",
+  "design_contract_ref": "wdi/DESIGN_CONTRACT_V1.json",
+  "adversarial_questions": [
+    {
+      "question": "Does this read as a cloned Fit & You club site in blue?",
+      "response": "No. Personal Ukrainian champion-coach, canoe hero, results board, no orange, no membership club IA."
+    },
+    {
+      "question": "Is the Poseidon strike gimmicky or unstable?",
+      "response": "Implemented as 2D paddle silhouette + slash + clip-path split, not a 3D character. Skip + reduced motion provided."
+    },
+    {
+      "question": "Will the gold logo flash a white rectangle on dark?",
+      "response": "Mitigated with mix-blend-mode multiply. Must verify in browser."
+    },
+    {
+      "question": "Are fake testimonials a honesty failure?",
+      "response": "Omitted. Proof is titles, certificates, and real coaching footage."
+    },
+    {
+      "question": "Is ui-ux-pro-max portfolio-grid + Barlow the right system?",
+      "response": "Rejected as generic. Host overrode to Unbounded/Manrope and editorial current layout."
+    },
+    {
+      "question": "Can multiple autoplay videos tank the page?",
+      "response": "Muted, metadata preload, pause when offscreen."
+    }
+  ],
+  "disposition": "PROCEED",
+  "notes": "Prototype path. Gaps in contact channels and authorized transformations remain explicit."
+}

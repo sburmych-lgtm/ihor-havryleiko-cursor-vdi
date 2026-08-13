@@ -1,0 +1,64 @@
+{
+  "schema": "CAPABILITY_RESOLUTION_V1",
+  "task_class": "VISUAL_FRONTEND",
+  "knowledge_slices": [
+    "adapters/pilot/SHARED_EXECUTION_CONTRACT_V1.md",
+    "adapters/pilot/knowledge/KNOWLEDGE_NAVIGATION_MAP_V1.md",
+    "adapters/pilot/schemas/DESIGN_CONTRACT_V1.schema.json",
+    "adapters/pilot/schemas/REFERENCE_DNA_V1.schema.json"
+  ],
+  "wdi_packages": [],
+  "wdi_package_routing": "DELEGATED_TO_PHASE_10B_ROUTER",
+  "external_considered": [
+    "frontend-design",
+    "ui-ux-pro-max",
+    "modern-web-guidance",
+    "motion",
+    "cursor-ide-browser",
+    "plugin-railway-railway",
+    "plugin-motion-Motion",
+    "shadcn",
+    "context7"
+  ],
+  "external_selected": [
+    "frontend-design",
+    "ui-ux-pro-max",
+    "modern-web-guidance",
+    "motion",
+    "cursor-ide-browser",
+    "plugin-motion-Motion"
+  ],
+  "external_skipped": [
+    "shadcn",
+    "context7",
+    "plugin-railway-railway"
+  ],
+  "capabilities_needed": [
+    "reference-live-inspection",
+    "design-contract",
+    "responsive-frontend-build",
+    "motion-intro",
+    "visual-review-screenshots"
+  ],
+  "capabilities_unavailable": [
+    "railway-deploy-auth",
+    "motion-plus-source"
+  ],
+  "availability_disposition": "DEGRADED_PARTIAL",
+  "validation_requirements": ["RESPONSIVE_BROWSER"],
+  "specialist_roles": [
+    "REFERENCE_ANALYST",
+    "IMPLEMENTATION_SPECIALIST",
+    "VISUAL_CRITIC"
+  ],
+  "tool_lane": "EXPLORATION_OR_IMPLEMENTATION",
+  "require_reference_dna": true,
+  "require_design_contract": true,
+  "require_pre_impl_review": true,
+  "max_remediation_iterations": 3,
+  "notes": [
+    "Railway whoami returned unauthenticated; deploy skipped.",
+    "Motion+ gated example source was not used; free AnimatePresence / exit-animation examples were used.",
+    "Phase 10B skill packages were not invoked as production skill runs; routing remains delegated."
+  ]
+}
